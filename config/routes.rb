@@ -1,5 +1,8 @@
 Trgovina::Application.routes.draw do
 
+  root :to => 'pages#home'
+  match '/about' => 'pages#about'
+
   namespace :admin do
     resources :products
   end
