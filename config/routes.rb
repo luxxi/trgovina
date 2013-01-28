@@ -4,6 +4,7 @@ Trgovina::Application.routes.draw do
   match '/about' => 'pages#about'
   match '/add_to_cart' => 'pages#add_to_cart'
 
+
   namespace :admin do
     resources :products
   end
