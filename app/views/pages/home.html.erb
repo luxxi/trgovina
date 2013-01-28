@@ -1,0 +1,12 @@
+<h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+
+<table>
+    <% @products.each do |product| %>
+        <tr>
+          <td><%= product.name %></td>
+          <td><%= product.price %></td>
+          <td><%= button_to 'Dodoj v košarico', :action => 'add_to_cart', :id => product %></td>
+        </tr>
+    <% end %>
+</table>

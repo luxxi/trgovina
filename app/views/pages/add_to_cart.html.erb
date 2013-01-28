@@ -1,0 +1,6 @@
+<h2>Tvoja košarica:</h2>
+<ul>
+  <% for item in @cart.items %>
+    <li><%= item.quantity %> &times; <%= item.name %></li>
+  <% end %>
+</ul>
