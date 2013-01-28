@@ -7,7 +7,6 @@ class PagesController < ApplicationController
   def about
     @title = "- O nas"
   end
-<<<<<<< HEAD
 
   def add_to_cart
     product = Product.find(params[:id])
@@ -24,6 +23,4 @@ class PagesController < ApplicationController
 
     #session[:cart] ||= Cart.new
   end
-=======
->>>>>>> 0dd5afb9680728a3f1462a83ec4928dc75f3891c
 end
