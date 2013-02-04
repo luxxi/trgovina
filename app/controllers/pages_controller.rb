@@ -1,3 +1,4 @@
+# Encoding: utf-8
 class PagesController < ApplicationController
   def home
     @products = Product.all
@@ -9,9 +10,9 @@ class PagesController < ApplicationController
   end
 
   def add_to_cart
+    @cart = find_cart
     if params[:id]
       product = Product.find(params[:id])
-      @cart = find_cart
       @cart.add_product(product)
     end
     respond_to do |format|
@@ -19,10 +20,16 @@ class PagesController < ApplicationController
 
       format.pdf do
         pdf = Prawn::Document.new
-
-        pdf.text "Pozdravljeni"
+        pdf.text "Tvoja košarica", size: 30, style: :bold
         pdf.move_down 20
-        pdf.text "Adijo"
+        sumAll = 0
+        for item in @cart.items
+          sum = item.quantity * item.price
+          sumAll = sumAll + sum
+          pdf.text "#{item.quantity}x #{item.name} = #{sum}"
+          pdf.move_down 10
+        end
+        pdf.text "Skupaj: #{sumAll}"
 
         send_data pdf.render, filename: "Kosarica.pdf",
                   type: "application/pdf",
