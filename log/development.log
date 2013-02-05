@@ -2656,3 +2656,3491 @@ ActionController::RoutingError (No route matches [GET] "/photos/original/missing
 
 
   Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374@trgovina2/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+Connecting to database specified by database.yml
+  [1m[36m (6.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateProducts (20121217080114)
+Migrating to AddAttachmentPhotoToProducts (20130128082956)
+  [1m[35m (1.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("products")
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-01 12:58:30 +0100
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" [0m
+  Rendered pages/home.html.erb within layouts/application (11.3ms)
+Compiled jquery.js  (2ms)  (pid 57098)
+Compiled jquery_ujs.js  (0ms)  (pid 57098)
+Compiled application.js  (41ms)  (pid 57098)
+  Rendered shared/_header.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 260ms (Views: 176.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-01 12:58:31 +0100
+Served asset /admin/application.css - 200 OK (12ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-01 12:58:31 +0100
+Served asset /admin/products.js - 200 OK (1ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-01 12:58:31 +0100
+Served asset /admin/products.css - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-01 12:58:31 +0100
+Served asset /bootstrap.js - 200 OK (4ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-01 12:58:31 +0100
+Served asset /pages.css - 200 OK (3ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-01 12:58:31 +0100
+Served asset /admin/application.js - 200 OK (7ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-01 12:58:31 +0100
+Served asset /pages.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-01 12:58:31 +0100
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-01 12:58:31 +0100
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-01 12:58:31 +0100
+Served asset /application.js - 200 OK (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-01 12:58:31 +0100
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/photos/original/missing.png" for 127.0.0.1 at 2013-02-01 12:58:31 +0100
+
+ActionController::RoutingError (No route matches [GET] "/photos/original/missing.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started POST "/add_to_cart?id=6" for 127.0.0.1 at 2013-02-01 13:08:08 +0100
+Connecting to database specified by database.yml
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"vcPlot6QdoH63gg3xw3yyodsrePzO8ULS81RbjQt6us=", "id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (2.6ms)
+  Rendered shared/_header.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 111ms (Views: 69.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-01 13:08:09 +0100
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-01 13:08:09 +0100
+Served asset /admin/products.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-01 13:08:09 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-01 13:08:09 +0100
+Served asset /admin/application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-01 13:08:09 +0100
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-01 13:08:09 +0100
+Served asset /pages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-01 13:08:09 +0100
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started POST "/add_to_cart?id=1" for 127.0.0.1 at 2013-02-01 13:08:14 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"vcPlot6QdoH63gg3xw3yyodsrePzO8ULS81RbjQt6us=", "id"=>"1"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (0.1ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-01 13:08:14 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-01 13:08:14 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-01 13:08:14 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-01 13:08:14 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-01 13:08:14 +0100
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-01 13:08:14 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-01 13:08:14 +0100
+Served asset /application.js - 304 Not Modified (28ms)
+
+
+Started POST "/add_to_cart?id=2" for 127.0.0.1 at 2013-02-01 13:09:54 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"vcPlot6QdoH63gg3xw3yyodsrePzO8ULS81RbjQt6us=", "id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (0.1ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-01 13:09:54 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-01 13:09:54 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-01 13:09:54 +0100
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-01 13:09:54 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-01 13:09:54 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-01 13:09:54 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-01 13:09:54 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/add_to_cart?id=2" for 127.0.0.1 at 2013-02-01 13:19:12 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"vcPlot6QdoH63gg3xw3yyodsrePzO8ULS81RbjQt6us=", "id"=>"2"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.4ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-01 13:19:12 +0100
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-01 13:19:12 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-01 13:19:12 +0100
+Served asset /pages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-01 13:19:12 +0100
+Served asset /admin/application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-01 13:19:12 +0100
+Served asset /admin/products.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-01 13:19:12 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-01 13:19:12 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-01 13:19:12 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-01 13:19:12 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-01 13:19:12 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-01 13:19:12 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started POST "/add_to_cart?id=2" for 127.0.0.1 at 2013-02-01 13:26:29 +0100
+Connecting to database specified by database.yml
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"vcPlot6QdoH63gg3xw3yyodsrePzO8ULS81RbjQt6us=", "id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (4.2ms)
+  Rendered shared/_header.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 169ms (Views: 94.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-01 13:26:31 +0100
+Served asset /pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-01 13:26:31 +0100
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-01 13:26:31 +0100
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-01 13:26:31 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-01 13:26:31 +0100
+Served asset /admin/products.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-01 13:26:31 +0100
+Served asset /admin/application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-01 13:26:31 +0100
+Served asset /admin/application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-01 13:26:31 +0100
+Served asset /admin/products.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-01 13:26:31 +0100
+Served asset /bootstrap.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-01 13:26:31 +0100
+Served asset /application.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-01 13:26:31 +0100
+Served asset /pages.js - 304 Not Modified (2ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-01 13:26:32 +0100
+Processing by PagesController#add_to_cart as PDF
+Completed 500 Internal Server Error in 0ms
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/pages_controller.rb:12:in `add_to_cart'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.3ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-01 13:27:57 +0100
+
+SyntaxError (/Users/islam/Documents/Development/trgovina/app/controllers/pages_controller.rb:14: syntax error, unexpected tIVAR, expecting ':'
+      @cart = find_cart
+           ^
+/Users/islam/Documents/Development/trgovina/app/controllers/pages_controller.rb:44: syntax error, unexpected keyword_end, expecting $end):
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__3754897953769040352__call__728807229174617929__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.7ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.1ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-01 13:28:11 +0100
+Processing by PagesController#add_to_cart as PDF
+  Rendered text template (0.0ms)
+Sent data Kosarica.pdf (4.8ms)
+Completed 200 OK in 61ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-04 08:22:00 +0100
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" [0m
+  Rendered pages/home.html.erb within layouts/application (11.5ms)
+  Rendered shared/_header.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 174ms (Views: 120.4ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:22:00 +0100
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:22:00 +0100
+Served asset /admin/products.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:22:00 +0100
+Served asset /admin/products.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:22:00 +0100
+Served asset /admin/application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:22:00 +0100
+Served asset /pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:22:00 +0100
+Served asset /admin/application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:22:00 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:22:00 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:22:00 +0100
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:22:00 +0100
+Served asset /pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:22:00 +0100
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/photos/original/missing.png" for 127.0.0.1 at 2013-02-04 08:22:01 +0100
+
+ActionController::RoutingError (No route matches [GET] "/photos/original/missing.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/add_to_cart?id=1" for 127.0.0.1 at 2013-02-04 08:23:10 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"24il8PO2VGHg/SBgdPi7OAAA2H8Yp5nG9FUNaMjEwoo=", "id"=>"1"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.4ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 15.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:23:10 +0100
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:23:10 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:10 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:23:10 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:23:10 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:10 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:10 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:10 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:10 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:10 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:10 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/add_to_cart?id=4" for 127.0.0.1 at 2013-02-04 08:23:16 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"24il8PO2VGHg/SBgdPi7OAAA2H8Yp5nG9FUNaMjEwoo=", "id"=>"4"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (0.6ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:23:16 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:23:16 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:23:16 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:23:16 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:16 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:16 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:16 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:16 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:16 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:16 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:16 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:23:17 +0100
+Processing by PagesController#add_to_cart as PDF
+  Rendered text template (0.0ms)
+Sent data Kosarica.pdf (3.7ms)
+Completed 200 OK in 57ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:23:32 +0100
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:23:32 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:32 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:23:32 +0100
+Served asset /admin/application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:23:32 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:32 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:32 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:32 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:32 +0100
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:32 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:23:32 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-04 08:24:20 +0100
+Processing by PagesController#home as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" 
+  Rendered pages/home.html.erb within layouts/application (11.9ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:20 +0100
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:20 +0100
+Served asset /admin/application.js - 200 OK (0ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:20 +0100
+Served asset /admin/application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:20 +0100
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:20 +0100
+Served asset /admin/products.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:20 +0100
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:20 +0100
+Served asset /pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:20 +0100
+Served asset /admin/products.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:20 +0100
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:20 +0100
+Served asset /pages.js - 200 OK (0ms)
+
+
+Started GET "/photos/original/missing.png" for 127.0.0.1 at 2013-02-04 08:24:20 +0100
+
+ActionController::RoutingError (No route matches [GET] "/photos/original/missing.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:20 +0100
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/photos/original/missing.png" for 127.0.0.1 at 2013-02-04 08:24:20 +0100
+
+ActionController::RoutingError (No route matches [GET] "/photos/original/missing.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started POST "/add_to_cart?id=1" for 127.0.0.1 at 2013-02-04 08:24:22 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"tfBMQ9YfNvDFg5Sw2xhAHMfmEjS9xMNFzeOsclTBf4w=", "id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.5ms)
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:22 +0100
+Served asset /admin/application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:22 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:22 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:22 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:22 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:22 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:22 +0100
+Served asset /admin/application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:22 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:22 +0100
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:22 +0100
+Served asset /pages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:22 +0100
+Served asset /application.js - 304 Not Modified (39ms)
+
+
+Started POST "/add_to_cart?id=2" for 127.0.0.1 at 2013-02-04 08:24:26 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"tfBMQ9YfNvDFg5Sw2xhAHMfmEjS9xMNFzeOsclTBf4w=", "id"=>"2"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.0ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:26 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:26 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:26 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:26 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:26 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:26 +0100
+Served asset /admin/application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:26 +0100
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:26 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:26 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:26 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:26 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-04 08:24:41 +0100
+Processing by PagesController#home as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" [0m
+  Rendered pages/home.html.erb within layouts/application (10.2ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:42 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:42 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:42 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:42 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:42 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:42 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:42 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:42 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:42 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:42 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/photos/original/missing.png" for 127.0.0.1 at 2013-02-04 08:24:42 +0100
+
+ActionController::RoutingError (No route matches [GET] "/photos/original/missing.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:42 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/photos/original/missing.png" for 127.0.0.1 at 2013-02-04 08:24:42 +0100
+
+ActionController::RoutingError (No route matches [GET] "/photos/original/missing.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/add_to_cart?id=3" for 127.0.0.1 at 2013-02-04 08:24:45 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"hvInpJa5dnEQwJnUgBMqX7tnjfHnUlGRur47nJQsJi0=", "id"=>"3"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (0.5ms)
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:46 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:46 +0100
+Served asset /admin/application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:46 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:46 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:46 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:46 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:24:46 +0100
+Served asset /admin/products.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:46 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:46 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:46 +0100
+Served asset /application.js - 304 Not Modified (47ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:24:46 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:24:59 +0100
+Processing by PagesController#add_to_cart as PDF
+  Rendered text template (0.0ms)
+Sent data Kosarica.pdf (0.7ms)
+Completed 200 OK in 58ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:25:52 +0100
+
+SyntaxError (/Users/islam/Documents/Development/trgovina/app/controllers/pages_controller.rb:23: invalid multibyte char (US-ASCII)
+/Users/islam/Documents/Development/trgovina/app/controllers/pages_controller.rb:23: invalid multibyte char (US-ASCII)
+/Users/islam/Documents/Development/trgovina/app/controllers/pages_controller.rb:23: syntax error, unexpected $end, expecting keyword_end
+        pdf.text "Tvoja košarica"
+                            ^):
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__2414919488204828509__call__1521006864925810892__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:25:54 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:25:54 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:25:54 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:25:54 +0100
+Served asset /admin/products.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:25:54 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:25:54 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:25:54 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:25:54 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:25:54 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:25:54 +0100
+Served asset /pages.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:25:54 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:26:37 +0100
+Processing by PagesController#add_to_cart as PDF
+  Rendered text template (0.0ms)
+Sent data Kosarica.pdf (1.6ms)
+Completed 200 OK in 97ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:26:38 +0100
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:26:38 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:26:38 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:26:38 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:26:38 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:26:38 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:26:38 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:26:38 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:26:38 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:26:38 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:26:38 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:28:40 +0100
+Processing by PagesController#add_to_cart as PDF
+  Rendered text template (0.0ms)
+Sent data Kosarica.pdf (1.0ms)
+Completed 200 OK in 147ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:28:44 +0100
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:28:44 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:28:44 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:28:44 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:28:44 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:28:44 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:28:44 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:28:44 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:28:44 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:28:44 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:28:44 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:33:10 +0100
+Processing by PagesController#add_to_cart as PDF
+Completed 500 Internal Server Error in 153ms
+
+NoMethodError (undefined method `items' for nil:NilClass):
+  app/controllers/pages_controller.rb:26:in `block (2 levels) in add_to_cart'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (20.5ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.8ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:34:45 +0100
+Processing by PagesController#add_to_cart as PDF
+Completed 500 Internal Server Error in 67ms
+
+NoMethodError (undefined method `items' for nil:NilClass):
+  app/controllers/pages_controller.rb:26:in `block (2 levels) in add_to_cart'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.8ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:34:59 +0100
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:34:59 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:34:59 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:34:59 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:34:59 +0100
+Served asset /admin/application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:34:59 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:34:59 +0100
+Served asset /admin/application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:34:59 +0100
+Served asset /admin/products.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:34:59 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:34:59 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:34:59 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/add_to_cart?id=4" for 127.0.0.1 at 2013-02-04 08:35:02 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"24il8PO2VGHg/SBgdPi7OAAA2H8Yp5nG9FUNaMjEwoo=", "id"=>"4"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (0.5ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 9.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:35:02 +0100
+Served asset /admin/application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:35:02 +0100
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:35:02 +0100
+Served asset /admin/products.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:35:02 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:35:02 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:35:02 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:35:02 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:35:02 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:35:02 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:35:02 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:35:02 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:36:43 +0100
+Processing by PagesController#add_to_cart as PDF
+Completed 500 Internal Server Error in 81ms
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/controllers/pages_controller.rb:26:in `block (2 levels) in add_to_cart'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (18.2ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.9ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:36:46 +0100
+Served asset /admin/application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:36:46 +0100
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:36:46 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:36:46 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:36:46 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:36:46 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:36:46 +0100
+Served asset /admin/application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:36:46 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:36:46 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:36:46 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:36:46 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/add_to_cart?id=4" for 127.0.0.1 at 2013-02-04 08:37:31 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"24il8PO2VGHg/SBgdPi7OAAA2H8Yp5nG9FUNaMjEwoo=", "id"=>"4"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (0.5ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:37:31 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:37:31 +0100
+Served asset /pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:37:31 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:37:31 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:37:31 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:37:31 +0100
+Served asset /admin/products.css - 304 Not Modified (32ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:37:31 +0100
+Served asset /admin/products.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:37:31 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:37:31 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:37:31 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:37:35 +0100
+Processing by PagesController#add_to_cart as PDF
+Completed 500 Internal Server Error in 64ms
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/controllers/pages_controller.rb:26:in `block (2 levels) in add_to_cart'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:38:51 +0100
+Processing by PagesController#add_to_cart as PDF
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/pages_controller.rb:14:in `add_to_cart'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.9ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.2ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:39:33 +0100
+Processing by PagesController#add_to_cart as PDF
+Completed 500 Internal Server Error in 103ms
+
+NoMethodError (undefined method `each' for #<Cart:0x007fb99c1161d0>):
+  app/controllers/pages_controller.rb:31:in `block (2 levels) in add_to_cart'
+  app/controllers/pages_controller.rb:21:in `add_to_cart'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-04 08:40:02 +0100
+Processing by PagesController#home as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" [0m
+  Rendered pages/home.html.erb within layouts/application (44.3ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 72ms (Views: 55.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:40:02 +0100
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:40:02 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:40:02 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:02 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:40:02 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:02 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:02 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:02 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:02 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:02 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:02 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/photos/original/missing.png" for 127.0.0.1 at 2013-02-04 08:40:02 +0100
+
+ActionController::RoutingError (No route matches [GET] "/photos/original/missing.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/islam/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/add_to_cart?id=4" for 127.0.0.1 at 2013-02-04 08:40:03 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"24il8PO2VGHg/SBgdPi7OAAA2H8Yp5nG9FUNaMjEwoo=", "id"=>"4"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (0.6ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:40:03 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:40:03 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:40:03 +0100
+Served asset /admin/application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:03 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:40:03 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:03 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:03 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:03 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:03 +0100
+Served asset /pages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:03 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:03 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:40:05 +0100
+Processing by PagesController#add_to_cart as PDF
+Completed 500 Internal Server Error in 59ms
+
+NoMethodError (undefined method `each' for #<Cart:0x007fb99d86fca0>):
+  app/controllers/pages_controller.rb:31:in `block (2 levels) in add_to_cart'
+  app/controllers/pages_controller.rb:21:in `add_to_cart'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.8ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:40:26 +0100
+Processing by PagesController#add_to_cart as PDF
+  Rendered text template (0.0ms)
+Sent data Kosarica.pdf (1.1ms)
+Completed 200 OK in 83ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:40:59 +0100
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:40:59 +0100
+Served asset /admin/application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:40:59 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:40:59 +0100
+Served asset /pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:59 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:59 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:59 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:59 +0100
+Served asset /admin/products.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:59 +0100
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:59 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:40:59 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/add_to_cart?id=2" for 127.0.0.1 at 2013-02-04 08:41:02 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"24il8PO2VGHg/SBgdPi7OAAA2H8Yp5nG9FUNaMjEwoo=", "id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (0.7ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 9.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:41:02 +0100
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:41:02 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:41:02 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:41:02 +0100
+Served asset /admin/products.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:41:02 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:41:02 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:41:02 +0100
+Served asset /admin/application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:41:02 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:41:02 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:41:02 +0100
+Served asset /pages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:41:02 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:41:17 +0100
+Processing by PagesController#add_to_cart as PDF
+  Rendered text template (0.0ms)
+Sent data Kosarica.pdf (0.6ms)
+Completed 200 OK in 145ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:42:11 +0100
+Processing by PagesController#add_to_cart as PDF
+  Rendered text template (0.0ms)
+Sent data Kosarica.pdf (1.0ms)
+Completed 200 OK in 80ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:45:28 +0100
+Processing by PagesController#add_to_cart as PDF
+Completed 500 Internal Server Error in 275ms
+
+NoMethodError (undefined method `number_to_currency' for #<PagesController:0x007fb99bbf4418>):
+  app/controllers/pages_controller.rb:29:in `block (3 levels) in add_to_cart'
+  app/controllers/pages_controller.rb:26:in `each'
+  app/controllers/pages_controller.rb:26:in `block (2 levels) in add_to_cart'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.1ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.1ms)
+  Rendered /Users/islam/.rvm/gems/ruby-1.9.3-p327@trgovina/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (44.2ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:45:37 +0100
+Processing by PagesController#add_to_cart as PDF
+  Rendered text template (0.0ms)
+Sent data Kosarica.pdf (2.9ms)
+Completed 200 OK in 384ms (Views: 2.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:46:49 +0100
+Served asset /admin/application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:46:49 +0100
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:46:49 +0100
+Served asset /admin/products.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:49 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:46:49 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:49 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:49 +0100
+Served asset /admin/application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:49 +0100
+Served asset /bootstrap.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:49 +0100
+Served asset /admin/products.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:49 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:49 +0100
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/add_to_cart?id=2" for 127.0.0.1 at 2013-02-04 08:46:54 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (2.4ms)
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 56ms (Views: 48.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:46:54 +0100
+Served asset /admin/products.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:46:54 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:54 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:54 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:46:54 +0100
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:46:54 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:54 +0100
+Served asset /pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:54 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:54 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:54 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:55 +0100
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:55 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/add_to_cart?id=2" for 127.0.0.1 at 2013-02-04 08:46:57 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (2.4ms)
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 64ms (Views: 59.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:46:57 +0100
+Served asset /admin/application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:57 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 08:46:57 +0100
+Served asset /admin/products.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 08:46:57 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 08:46:57 +0100
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:57 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:57 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:57 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:57 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:57 +0100
+Served asset /pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 08:46:57 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/add_to_cart.pdf" for 127.0.0.1 at 2013-02-04 08:46:59 +0100
+Processing by PagesController#add_to_cart as PDF
+  Rendered text template (0.0ms)
+Sent data Kosarica.pdf (1.6ms)
+Completed 200 OK in 398ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+  [1m[36m (4.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateProducts (20121217080114)
+Migrating to AddAttachmentPhotoToProducts (20130128082956)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("products")
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-04 09:14:55 +0100
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" [0m
+  Rendered pages/home.html.erb within layouts/application (6.9ms)
+Compiled jquery.js  (1ms)  (pid 26024)
+Compiled jquery_ujs.js  (0ms)  (pid 26024)
+Compiled application.js  (39ms)  (pid 26024)
+  Rendered shared/_header.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 145ms (Views: 94.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 09:14:55 +0100
+Served asset /application.css - 200 OK (29ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 09:14:55 +0100
+Served asset /admin/products.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 09:14:55 +0100
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 09:14:55 +0100
+Served asset /admin/application.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 09:14:55 +0100
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 09:14:55 +0100
+Served asset /pages.css - 200 OK (3ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 09:14:55 +0100
+Served asset /admin/application.js - 200 OK (1ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 09:14:55 +0100
+Served asset /admin/products.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 09:14:55 +0100
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 09:14:55 +0100
+Served asset /pages.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 09:14:55 +0100
+Served asset /application.js - 200 OK (6ms)
+
+
+Started GET "/photos/original/missing.png" for 127.0.0.1 at 2013-02-04 09:14:55 +0100
+
+ActionController::RoutingError (No route matches [GET] "/photos/original/missing.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/add_to_cart?id=4" for 127.0.0.1 at 2013-02-04 09:32:23 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"4"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (0.8ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 7.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-04 09:54:04 +0100
+Processing by PagesController#home as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" [0m
+  Rendered pages/home.html.erb within layouts/application (4.1ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 29.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/photos/original/missing.png" for 127.0.0.1 at 2013-02-04 09:54:04 +0100
+
+ActionController::RoutingError (No route matches [GET] "/photos/original/missing.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/add_to_cart?id=6" for 127.0.0.1 at 2013-02-04 09:54:09 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"6"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "6"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (12.7ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined local variable or method `products_url' for #<#<Class:0x007f820eae6950>:0x007f820c99a3a0>):
+    8:   <% end %>
+    9: </ul>
+    10: 
+    11: <%= link_to "Kupi", @cart.paypal_url(products_url) %>
+  app/views/pages/add_to_cart.html.erb:11:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098266933120'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started POST "/add_to_cart?id=4" for 127.0.0.1 at 2013-02-04 09:54:26 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"4"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined local variable or method `items_url' for #<#<Class:0x007f820eae6950>:0x007f820a207658>):
+    8:   <% end %>
+    9: </ul>
+    10: 
+    11: <%= link_to "Kupi", @cart.paypal_url(items_url) %>
+  app/views/pages/add_to_cart.html.erb:11:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098246185580'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.6ms)
+
+
+Started POST "/add_to_cart?id=1" for 127.0.0.1 at 2013-02-04 09:54:34 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"1"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined local variable or method `item_url' for #<#<Class:0x007f820eae6950>:0x007f8211012b70>):
+    8:   <% end %>
+    9: </ul>
+    10: 
+    11: <%= link_to "Kupi", @cart.paypal_url(item_url) %>
+  app/views/pages/add_to_cart.html.erb:11:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098303880440'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-04 09:54:49 +0100
+Processing by PagesController#home as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" [0m
+  Rendered pages/home.html.erb within layouts/application (24.6ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 09:54:49 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 09:54:49 +0100
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 09:54:50 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 09:54:50 +0100
+Served asset /pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 09:54:50 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 09:54:50 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 09:54:50 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 09:54:50 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 09:54:50 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 09:54:50 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 09:54:50 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/photos/original/missing.png" for 127.0.0.1 at 2013-02-04 09:54:50 +0100
+
+ActionController::RoutingError (No route matches [GET] "/photos/original/missing.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started POST "/add_to_cart?id=4" for 127.0.0.1 at 2013-02-04 09:54:51 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"4"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<Cart:0x007f820a1ee158>):
+    8:   <% end %>
+    9: </ul>
+    10: 
+    11: <%= link_to "Kupi", @cart.paypal_url(item) %>
+  app/models/cart.rb:23:in `paypal_url'
+  app/views/pages/add_to_cart.html.erb:11:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098286186180'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.8ms)
+
+
+Started POST "/add_to_cart?id=1" for 127.0.0.1 at 2013-02-04 09:55:06 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined local variable or method `items' for #<#<Class:0x007f820eae6950>:0x007f82110165e0>):
+    8:   <% end %>
+    9: </ul>
+    10: 
+    11: <%= link_to "Kupi", @cart.paypal_url(items) %>
+  app/views/pages/add_to_cart.html.erb:11:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098303904020'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.9ms)
+
+
+Started POST "/add_to_cart?id=1" for 127.0.0.1 at 2013-02-04 09:55:23 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"1"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<Cart:0x007f820d96f438>):
+    8:   <% end %>
+    9: </ul>
+    10: 
+    11: <%= link_to "Kupi", @cart.paypal_url(item) %>
+  app/models/cart.rb:23:in `paypal_url'
+  app/views/pages/add_to_cart.html.erb:11:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098281281900'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.7ms)
+
+
+Started POST "/add_to_cart?id=1" for 127.0.0.1 at 2013-02-04 09:55:57 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<Cart:0x007f820ed3ea40>):
+    8:   <% end %>
+    9: </ul>
+    10: 
+    11: <%= link_to "Kupi", @cart.paypal_url(@cart.items) %>
+  app/models/cart.rb:23:in `paypal_url'
+  app/views/pages/add_to_cart.html.erb:11:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098287009140'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.5ms)
+
+
+Started POST "/add_to_cart?id=2" for 127.0.0.1 at 2013-02-04 09:56:19 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"2"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1)):
+    8:   <% end %>
+    9: </ul>
+    10: 
+    11: <%= link_to "Kupi", @cart.paypal_url() %>
+  app/models/cart.rb:17:in `paypal_url'
+  app/views/pages/add_to_cart.html.erb:11:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098269342440'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started POST "/add_to_cart?id=4" for 127.0.0.1 at 2013-02-04 09:56:44 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"4"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<Cart:0x007f820bedb248>):
+    8:   <% end %>
+    9: </ul>
+    10: 
+    11: <%= link_to "Kupi", @cart.paypal_url(item) %>
+  app/models/cart.rb:23:in `paypal_url'
+  app/views/pages/add_to_cart.html.erb:11:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098268459940'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.5ms)
+
+
+Started POST "/add_to_cart?id=4" for 127.0.0.1 at 2013-02-04 09:57:22 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"4"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<Cart:0x007f820a12ab68>):
+    8:   <% end %>
+    9: </ul>
+    10: 
+    11: <%= link_to "Kupi", @cart.paypal_url(item) %>
+  app/models/cart.rb:23:in `paypal_url'
+  app/views/pages/add_to_cart.html.erb:11:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098268459940'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.6ms)
+
+
+Started POST "/add_to_cart?id=1" for 127.0.0.1 at 2013-02-04 09:57:25 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<Cart:0x007f820aeefc58>):
+    8:   <% end %>
+    9: </ul>
+    10: 
+    11: <%= link_to "Kupi", @cart.paypal_url(item) %>
+  app/models/cart.rb:23:in `paypal_url'
+  app/views/pages/add_to_cart.html.erb:11:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098268459940'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-04 09:57:28 +0100
+Processing by PagesController#home as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" 
+  Rendered pages/home.html.erb within layouts/application (5.3ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 09:57:28 +0100
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 09:57:28 +0100
+Served asset /admin/products.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 09:57:28 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 09:57:28 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 09:57:28 +0100
+Served asset /admin/application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 09:57:28 +0100
+Served asset /pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 09:57:28 +0100
+Served asset /admin/application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 09:57:28 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 09:57:28 +0100
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 09:57:28 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 09:57:28 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/photos/original/missing.png" for 127.0.0.1 at 2013-02-04 09:57:28 +0100
+
+ActionController::RoutingError (No route matches [GET] "/photos/original/missing.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/add_to_cart?id=1" for 127.0.0.1 at 2013-02-04 09:57:29 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<Cart:0x007f820aefdd58>):
+    8:   <% end %>
+    9: </ul>
+    10: 
+    11: <%= link_to "Kupi", @cart.paypal_url(item) %>
+  app/models/cart.rb:23:in `paypal_url'
+  app/views/pages/add_to_cart.html.erb:11:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098268459940'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.9ms)
+
+
+Started POST "/add_to_cart?id=1" for 127.0.0.1 at 2013-02-04 09:57:57 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"1"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<Cart:0x007f820eae6158>):
+    8:   <% end %>
+    9: </ul>
+    10: 
+    11: <%= link_to "Kupi", @cart.paypal_url(@cart.items) %>
+  app/models/cart.rb:23:in `paypal_url'
+  app/views/pages/add_to_cart.html.erb:11:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098251571640'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-04 09:58:47 +0100
+Processing by PagesController#home as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" [0m
+  Rendered pages/home.html.erb within layouts/application (5.0ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 09:58:47 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 09:58:47 +0100
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 09:58:47 +0100
+Served asset /pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 09:58:47 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 09:58:47 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 09:58:47 +0100
+Served asset /admin/products.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 09:58:47 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 09:58:47 +0100
+Served asset /admin/products.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 09:58:47 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 09:58:47 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 09:58:47 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/photos/original/missing.png" for 127.0.0.1 at 2013-02-04 09:58:47 +0100
+
+ActionController::RoutingError (No route matches [GET] "/photos/original/missing.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/add_to_cart?id=1" for 127.0.0.1 at 2013-02-04 09:58:48 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"1"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<Cart:0x007f820abedd70>):
+    5: <ul>
+    6:   <% for item in @cart.items %>
+    7:     <li><%= item.quantity %> &times; <%= item.name %></li>
+    8:       <%= link_to "Kupi", @cart.paypal_url(item) %>
+    9:   <% end %>
+    10: </ul>
+  app/models/cart.rb:23:in `paypal_url'
+  app/views/pages/add_to_cart.html.erb:8:in `block in _app_views_pages_add_to_cart_html_erb__984687204400938006_70098251403340'
+  app/views/pages/add_to_cart.html.erb:6:in `each'
+  app/views/pages/add_to_cart.html.erb:6:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098251403340'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.9ms)
+
+
+Started POST "/add_to_cart?id=1" for 127.0.0.1 at 2013-02-04 09:59:11 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `id' for #<CartItem:0x007f820bf38cb8>):
+    4: <h2>Tvoja košarica:</h2>
+    5: <ul>
+    6:   <% for item in @cart.items %>
+    7:     <li><%= item.id %><%= item.quantity %> &times; <%= item.name %></li>
+    8:       <%= link_to "Kupi", @cart.paypal_url(item) %>
+    9:   <% end %>
+    10: </ul>
+  app/views/pages/add_to_cart.html.erb:7:in `block in _app_views_pages_add_to_cart_html_erb__984687204400938006_70098285299080'
+  app/views/pages/add_to_cart.html.erb:6:in `each'
+  app/views/pages/add_to_cart.html.erb:6:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098285299080'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.8ms)
+
+
+Started POST "/add_to_cart?id=1" for 127.0.0.1 at 2013-02-04 09:59:33 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"1"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<Cart:0x007f820ac4aef8>):
+    5: <ul>
+    6:   <% for item in @cart.items %>
+    7:     <li><%= item.id %><%= item.quantity %> &times; <%= item.name %></li>
+    8:       <%= link_to "Kupi", @cart.paypal_url(item) %>
+    9:   <% end %>
+    10: </ul>
+  app/models/cart.rb:23:in `paypal_url'
+  app/views/pages/add_to_cart.html.erb:8:in `block in _app_views_pages_add_to_cart_html_erb__984687204400938006_70098285299080'
+  app/views/pages/add_to_cart.html.erb:6:in `each'
+  app/views/pages/add_to_cart.html.erb:6:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098285299080'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.6ms)
+
+
+Started POST "/add_to_cart?id=1" for 127.0.0.1 at 2013-02-04 10:00:13 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (0.8ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:13 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:13 +0100
+Served asset /admin/application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:13 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:13 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:13 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:13 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:13 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:13 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:13 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:13 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:13 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/add_to_cart?id=1" for 127.0.0.1 at 2013-02-04 10:00:23 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"1"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (0.4ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:23 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:23 +0100
+Served asset /admin/application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:23 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:23 +0100
+Served asset /admin/products.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:23 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:23 +0100
+Served asset /admin/application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:23 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:23 +0100
+Served asset /admin/products.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:23 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:23 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:23 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/add_to_cart?id=1" for 127.0.0.1 at 2013-02-04 10:00:26 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (0.4ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:26 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:26 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:26 +0100
+Served asset /pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:26 +0100
+Served asset /admin/products.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:26 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:26 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:26 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:26 +0100
+Served asset /admin/products.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:26 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:26 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:26 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-04 10:00:35 +0100
+Processing by PagesController#home as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered pages/home.html.erb within layouts/application (7.5ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:35 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:35 +0100
+Served asset /pages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:35 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:35 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:35 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:35 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:35 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:35 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:35 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:35 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:35 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/photos/original/missing.png" for 127.0.0.1 at 2013-02-04 10:00:35 +0100
+
+ActionController::RoutingError (No route matches [GET] "/photos/original/missing.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/add_to_cart?id=3" for 127.0.0.1 at 2013-02-04 10:00:38 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (0.5ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:38 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:38 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:38 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:38 +0100
+Served asset /admin/application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 10:00:38 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:38 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:38 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:38 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:38 +0100
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:38 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:00:38 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/add_to_cart?id=3" for 127.0.0.1 at 2013-02-04 10:01:31 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"3"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (0.9ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:01:31 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 10:01:31 +0100
+Served asset /admin/products.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:01:31 +0100
+Served asset /admin/application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 10:01:31 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 10:01:31 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 10:01:31 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:01:31 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 10:01:31 +0100
+Served asset /admin/products.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 10:01:31 +0100
+Served asset /pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 10:01:31 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:01:31 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/add_to_cart?id=3" for 127.0.0.1 at 2013-02-04 10:02:57 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `id' for #<CartItem:0x007f820af94d20>):
+    4: <h2>Tvoja košarica:</h2>
+    5: <ul>
+    6:   <% for item in @cart.items %>
+    7:     <li><%= item.quantity %> &times; <%= item.name %> <%= item.id %> </li>
+    8: 
+    9:   <% end %>
+    10: </ul>
+  app/views/pages/add_to_cart.html.erb:7:in `block in _app_views_pages_add_to_cart_html_erb__984687204400938006_70098250466100'
+  app/views/pages/add_to_cart.html.erb:6:in `each'
+  app/views/pages/add_to_cart.html.erb:6:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098250466100'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.7ms)
+
+
+Started POST "/add_to_cart?id=3" for 127.0.0.1 at 2013-02-04 10:03:25 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"3"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `id' for #<CartItem:0x007f820e834608>):
+    4: <h2>Tvoja košarica:</h2>
+    5: <ul>
+    6:   <% for item in @cart.items %>
+    7:     <li><%= item.quantity %> &times; <%= item.name %> <%= item.id %> </li>
+    8: 
+    9:   <% end %>
+    10: </ul>
+  app/views/pages/add_to_cart.html.erb:7:in `block in _app_views_pages_add_to_cart_html_erb__984687204400938006_70098250466100'
+  app/views/pages/add_to_cart.html.erb:6:in `each'
+  app/views/pages/add_to_cart.html.erb:6:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098250466100'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.2ms)
+
+
+Started POST "/add_to_cart?id=3" for 127.0.0.1 at 2013-02-04 10:03:44 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `id' for #<CartItem:0x007f820bccf710>):
+    4: <h2>Tvoja košarica:</h2>
+    5: <ul>
+    6:   <% for item in @cart.items %>
+    7:     <li><%= item.quantity %> &times; <%= item.name %> <%= item.id %> </li>
+    8: 
+    9:   <% end %>
+    10: </ul>
+  app/views/pages/add_to_cart.html.erb:7:in `block in _app_views_pages_add_to_cart_html_erb__984687204400938006_70098250466100'
+  app/views/pages/add_to_cart.html.erb:6:in `each'
+  app/views/pages/add_to_cart.html.erb:6:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098250466100'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-04 10:03:49 +0100
+Processing by PagesController#home as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered pages/home.html.erb within layouts/application (4.6ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 10:03:49 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:03:49 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 10:03:49 +0100
+Served asset /pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 10:03:49 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:03:49 +0100
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 10:03:49 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 10:03:49 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:03:49 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 10:03:49 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 10:03:49 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:03:49 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/photos/original/missing.png" for 127.0.0.1 at 2013-02-04 10:03:49 +0100
+
+ActionController::RoutingError (No route matches [GET] "/photos/original/missing.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started POST "/add_to_cart?id=2" for 127.0.0.1 at 2013-02-04 10:03:52 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `id' for #<CartItem:0x007f820e4ed620>):
+    4: <h2>Tvoja košarica:</h2>
+    5: <ul>
+    6:   <% for item in @cart.items %>
+    7:     <li><%= item.quantity %> &times; <%= item.name %> <%= item.id %> </li>
+    8: 
+    9:   <% end %>
+    10: </ul>
+  app/views/pages/add_to_cart.html.erb:7:in `block in _app_views_pages_add_to_cart_html_erb__984687204400938006_70098250466100'
+  app/views/pages/add_to_cart.html.erb:6:in `each'
+  app/views/pages/add_to_cart.html.erb:6:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098250466100'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.0ms)
+
+
+Started POST "/add_to_cart?id=2" for 127.0.0.1 at 2013-02-04 10:04:47 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"2"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `id' for #<CartItem:0x007f820db10260>):
+    4: <h2>Tvoja košarica:</h2>
+    5: <ul>
+    6:   <% for item in @cart.items %>
+    7:     <li><%= item.quantity %> &times; <%= item.name %> <%= item.id %> </li>
+    8: 
+    9:   <% end %>
+    10: </ul>
+  app/views/pages/add_to_cart.html.erb:7:in `block in _app_views_pages_add_to_cart_html_erb__984687204400938006_70098275395780'
+  app/views/pages/add_to_cart.html.erb:6:in `each'
+  app/views/pages/add_to_cart.html.erb:6:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098275395780'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.3ms)
+
+
+Started POST "/add_to_cart?id=2" for 127.0.0.1 at 2013-02-04 10:04:57 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `values_merge!' for #<Cart:0x007f820cd69d78>):
+    9:   <% end %>
+    10: </ul>
+    11: 
+    12: <%= link_to "Kupi", @cart.paypal_url(@cart.items) %>
+  app/models/cart.rb:29:in `block in paypal_url'
+  app/models/cart.rb:24:in `each'
+  app/models/cart.rb:24:in `each_with_index'
+  app/models/cart.rb:24:in `paypal_url'
+  app/views/pages/add_to_cart.html.erb:12:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098261445440'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.9ms)
+
+
+Started POST "/add_to_cart?id=2" for 127.0.0.1 at 2013-02-04 10:05:12 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"2"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (0.8ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 17ms (Views: 7.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:05:12 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 10:05:12 +0100
+Served asset /admin/products.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:05:12 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 10:05:12 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 10:05:12 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 10:05:12 +0100
+Served asset /pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:05:12 +0100
+Served asset /admin/application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 10:05:12 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 10:05:12 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 10:05:12 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:05:12 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/add_to_cart?id=2" for 127.0.0.1 at 2013-02-04 10:06:25 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<Cart:0x007f820ec9d000>):
+    9:   <% end %>
+    10: </ul>
+    11: 
+    12: <%= link_to "Kupi", @cart.paypal_url(@cart.items) %>
+  app/models/cart.rb:23:in `paypal_url'
+  app/views/pages/add_to_cart.html.erb:12:in `_app_views_pages_add_to_cart_html_erb__984687204400938006_70098261445440'
+  app/controllers/pages_controller.rb:18:in `add_to_cart'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-04 10:07:57 +0100
+Processing by PagesController#home as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" 
+  Rendered pages/home.html.erb within layouts/application (4.7ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 22ms (Views: 11.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:07:57 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 10:07:57 +0100
+Served asset /admin/products.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 10:07:57 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 10:07:57 +0100
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 10:07:57 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:07:57 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:07:57 +0100
+Served asset /admin/application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 10:07:57 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 10:07:57 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 10:07:57 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:07:57 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/photos/original/missing.png" for 127.0.0.1 at 2013-02-04 10:07:57 +0100
+
+ActionController::RoutingError (No route matches [GET] "/photos/original/missing.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/lukadomitrovic/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/lukadomitrovic/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/add_to_cart?id=2" for 127.0.0.1 at 2013-02-04 10:07:59 +0100
+Processing by PagesController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"mqbirAUBv0oISV/lV8ZTPjUv5qKYjEPKfi3ekk73WV8=", "id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered pages/add_to_cart.html.erb within layouts/application (1.5ms)
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:07:59 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 10:07:59 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-02-04 10:07:59 +0100
+Served asset /pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 10:07:59 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:07:59 +0100
+Served asset /admin/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.css?body=1" for 127.0.0.1 at 2013-02-04 10:07:59 +0100
+Served asset /admin/products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:07:59 +0100
+Served asset /admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/products.js?body=1" for 127.0.0.1 at 2013-02-04 10:07:59 +0100
+Served asset /admin/products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-02-04 10:07:59 +0100
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-02-04 10:07:59 +0100
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:07:59 +0100
+Served asset /application.js - 304 Not Modified (0ms)

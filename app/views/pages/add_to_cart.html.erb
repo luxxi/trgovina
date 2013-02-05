@@ -1,6 +1,13 @@
+<br />
+<%= link_to "Poglej v PDF-ju", :action => 'add_to_cart', :format => "pdf" %>
+
 <h2>Tvoja košarica:</h2>
 <ul>
   <% for item in @cart.items %>
-    <li><%= item.quantity %> &times; <%= item.name %></li>
+    <li><%= item.quantity %> &times; <%= item.name %> </li>
+
   <% end %>
 </ul>
+
+<%= link_to "Kupi", @cart.paypal_url(@cart.items) %>
+
