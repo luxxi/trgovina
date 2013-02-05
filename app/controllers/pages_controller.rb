@@ -11,10 +11,9 @@ class PagesController < ApplicationController
 
   def add_to_cart
     @cart = find_cart
-    if params[:id]
-      product = Product.find(params[:id])
-      @cart.add_product(product)
-    end
+    product = Product.find(params[:id])
+    @cart.add_product product unless product.nil?
+
     respond_to do |format|
       format.html
 
@@ -32,8 +31,8 @@ class PagesController < ApplicationController
         pdf.text "Skupaj: #{sumAll}"
 
         send_data pdf.render, filename: "Kosarica.pdf",
-                  type: "application/pdf",
-                  disposition: "inline" #odpre ga v novem zavihku znotraj brskalnika
+          type: "application/pdf",
+          disposition: "inline" #odpre ga v novem zavihku znotraj brskalnika
       end
     end
 
@@ -41,11 +40,6 @@ class PagesController < ApplicationController
 
   private
   def find_cart
-    unless session[:cart]
-      session[:cart] = Cart.new
-    end
-    session[:cart]
-
-    #session[:cart] ||= Cart.new
+    session[:cart] ||= Cart.new # This is BAD. Only IDs to Session not whole objects!!!
   end
 end
