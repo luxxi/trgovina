@@ -7,6 +7,7 @@ Trgovina::Application.routes.draw do
   match '/add_to_cart/:id' => 'pages#add_to_cart', as: :add_to_cart, :constraints => {:id => /\d+/}
 
   namespace :admin do
+    root :to => 'products#index'
     resources :products
   end
 

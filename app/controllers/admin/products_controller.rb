@@ -1,3 +1,4 @@
+# Encoding: utf-8
 class Admin::ProductsController < Admin::ApplicationController
 
   def index
@@ -25,5 +26,12 @@ class Admin::ProductsController < Admin::ApplicationController
       redirect_to edit_admin_products_path(@product)
     end
 
+  end
+
+  def destroy
+    @product = Product.find(params[:id])
+    @product.destroy
+    flash[:notice] = "Produkt uspešno zbrisan!"
+    redirect_to admin_products_path
   end
 end
