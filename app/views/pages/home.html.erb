@@ -7,11 +7,7 @@
           <td><%= image_tag product.photo.url %></td>
           <td><%= product.name %></td>
           <td><%= product.price %></td>
-<<<<<<< HEAD
-          <td><%= button_to 'Dodaj v košarico', :action => 'add_to_cart', :id => product %></td>
-=======
           <td><%= button_to 'Dodaj v košarico', add_to_cart_path(product.id) %></td>
->>>>>>> 7e4bbd883ba813ac913841867152df4b8f7779e9
         </tr>
     <% end %>
 </table>

@@ -1,5 +1,7 @@
 Trgovina::Application.routes.draw do
 
+  devise_for :users
+
   root :to => 'pages#home'
   match '/about' => 'pages#about'
   match '/add_to_cart/:id' => 'pages#add_to_cart', as: :add_to_cart, :constraints => {:id => /\d+/}

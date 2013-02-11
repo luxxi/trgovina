@@ -11,6 +11,8 @@ gem 'paperclip', '~> 3.0'
 
 gem 'prawn'
 
+gem 'devise'
+
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
